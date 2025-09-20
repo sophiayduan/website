@@ -5,8 +5,9 @@
     --clr-projBorders: #a74a44;
     --clr-links: #3f3dbb;
     --clr-projText:#006464;
-
+    --clr-grid:#a5a5a5e0;
     --mtop: clamp(1.3rem, 6vw, 8rem);
+    --clr-hover:rgba(182, 182, 182, 0.527);
 }
 
 .darkmode {
@@ -16,9 +17,10 @@
     --clr-projBorders: #643e8a;
     --clr-links: #078eb3;
     --clr-projText:#edc1c1;
+    --clr-grid:#b9b9b99a;
+    --clr-hover:rgba(248, 248, 248, 0.281);
+
 }
-
-
 
 body {
     margin:0;
@@ -26,7 +28,7 @@ body {
     display:flex;
     flex-direction:column;
     background-size: 20px 20px;
-    background-image: radial-gradient(#b9b9b9 0.25px, transparent 1px);
+    background-image: radial-gradient(var(--clr-grid) 0.25px, transparent 1px);
     background-color:var(--clr-background);
     color:var(--clr-text);
     margin-top: var(--mtop);
@@ -66,7 +68,7 @@ a:hover {
 }
 
 a:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 a:hover .tooltip {
@@ -190,9 +192,10 @@ h1:hover span:nth-child(3){
     display:block;
     opacity: 0;
     padding:4px 8px;
-    background-color:#b9b9b9;
+    background-color:#c9c9c9b9;
     position:absolute;
     transform: translateY(-50px);
+    border-radius:4px;
 }
 
 .top {
@@ -222,7 +225,7 @@ h1:hover span:nth-child(3){
     }
 
     a:hover {
-        transform:scale(1.1);
+        transform:scale(1.06);
 
     }
     a {
@@ -333,12 +336,18 @@ li {
 }
 
 footer {
+    display:flex;
+    justify-content:center;
     text-align:center;
-    padding:2rem;
+    padding:clamp(2rem,3vw,4rem);
+    padding-top:2rem;
+    padding-bottom:1.5rem;
+
 }
 
 footer p {
     font-size:0.75rem;
+    line-height:1.35;
 
 }
 
@@ -392,6 +401,19 @@ footer p {
     height:2rem; 
     padding-bottom:2.5rem; 
     padding-top:1rem;
+}
+
+.inspo {
+    background-color:rgba(189, 189, 189, 0.308);
+    padding:2px 4px;
+    color:var(--clr-links);
+    border-radius:4px;
+    transition: all 300ms ease-in-out;
+}
+
+.inspo:hover {
+    background-color:var(--clr-hover);
+
 }
 @media(max-width:460px){
     #special {
