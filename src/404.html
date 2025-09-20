@@ -10,16 +10,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sophia Duan</title>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
   <meta name="description" content="I try to make things.">
 
    <link rel="preload" href="/images/light.png" as="image">
   <link rel="preload" href="/images/dark.png" as="image">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../ffavicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../ffavicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon_io (1)/site.webmanifest">
   
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,53 +28,33 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_box_outline_blank" />
 </head>
 <body>
-    <section>
-    <div class="top">
-      <a class="link" href="../index.html"><-- back</a>
+    <section style="display:flex;justify-content:center;align-items:center;flex-direction:column;gap:10px;padding-top:2rem;">
 
-      <div class="socials">
-        <a href="https://github.com/sophiayduan" target="_blank">
-          <p class="tooltip">github</p>
-          <img src="../images/github.png" loading="eager">
-        </a>
-        <a href="mailto:sophiayduan@gmail.com">
-          <p class="tooltip">sophiayduan@gmail.com</p>
-          <img src="../images/mail.png" loading="eager">
-        </a>
-        <a id="dark-mode-toggle" class="dark-mode-toggle">
-            <p class="tooltip">dark mode</p>
-          <img id="mode"src="../images/dark.png" alt="toggle dark mode" loading="eager">
-        </a>
-      </div>
-    </div>
-
-        <h1>JPEG</h1>
-        <p>Ottawa's first all girls, highschool game jam!</p>
-
-        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;">
-            <h3 style="padding-bottom:0;">Tools:</h3>
-
-            <ul class="tools" >
-                <li>Tailwind&nbspCSS</li>
-                <li>HTML</li>
-                <li>JavaScript</li>
-            </ul>
-            <p style="margin-left:auto;">July 5-6th, 2025</p>
-
+        <h1 style="margin:0;">404</h1>
+        <div style="text-align:center;">
+            <p>Oops! This page doesn't exist. Want to head back <a class="inspo" href="index.html" target="_self">home</a>?</p>
+            <p>Enjoy this picture of a random cute dog.</p>
         </div>
-        <hr style="border: 0.2px solid var(--clr-projBorders);margin-bottom:1rem;">
-    </section>
+        <img id="randomDog" src="" alt="cute dog" style="width:80%; max-width:500px;border-radius:1rem;border:4px dashed var(--clr-projBorders);background-color:var(--clr-projects)">
+        <script>
+            function cuteDog(){
+                const dawg = document.getElementById("randomDog");
+                fetch("https://dog.ceo/api/breeds/image/random")
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === "success") {
+                            dawg.src = data.message;
+                            dawg.style.display = "block";
+                            loading.style.display = "none";
+                        }
+                    })
+                    .catch(error => console.error("Error:", error));
+            }
+            cuteDog();
 
-    <section>
-        <div style="display:flex;flex-wrap:wrap;align-items:center; justify-content:center;gap:20px;padding:2rem 0rem;">
-            <img src="../../images/jpeg.png" loading="lazy" width="100%">
-        </div>
-        
-        <p>
-            i'll get to writing this i promise
-        </p>
+        </script>
 
-    </section>
+   
   <footer>
     <div>
     <p style="font-weight:bold;">© 2025 Sophia Duan.</p>
