@@ -1,6 +1,6 @@
 dragElement(document.getElementById("jpeg"));
 dragElement(document.getElementById("endev"));
-dragElement(document.getElementById("pnp"));
+dragElement(document.getElementById("depot"));
 
 
 function dragElement(elmnt) {

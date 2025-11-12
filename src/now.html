@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <script>
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.documentElement?.classList.add('darkmode');
+  }
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophia Duan</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="I try to make things.">
+
+  <link rel="preload" href="/images/light.png" as="image">
+  <link rel="preload" href="/images/dark.png" as="image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io (1)/site.webmanifest">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Libre+Barcode+128&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_box_outline_blank" />
+
+</head>
+<body>
+    <section>
+    <div class="top">
+      <a class="link" href="/src/index.html"><-- back</a>
+
+      <div class="socials">
+        <a href="https://github.com/sophiayduan" target="_blank">
+          <p class="tooltip">github</p>
+          <img src="../images/github.png" loading="eager">
+        </a>
+        <a href="mailto:sophiayduan@gmail.com">
+          <p class="tooltip">sophiayduan@gmail.com</p>
+          <img src="../images/mail.png" loading="eager">
+        </a>
+        <a id="dark-mode-toggle" class="dark-mode-toggle">
+            <p class="tooltip">dark mode</p>
+          <img id="mode"src="../images/dark.png" alt="toggle dark mode" loading="eager">
+        </a>
+      </div>
+    </div>
+    <h2>What I'm up to now</h2>
+    <div style="display:flex; align-items:center; gap:1rem;justify-content:space-between;">
+        <h4>Last updated: November 10th, 2025</h4>
+
+        <h4>This is a <a href="https://nownownow.com/about" target="_blank" class="link">/now page</a></h4>
+    </div>
+        
+        
+
+        <hr style="border: 0.2px solid var(--clr-projBorders);margin-bottom:1rem;">
+    </section>
+    <section>
+    <h3>Doing:</h3>
+    <ul id="doing">
+
+      <li>Building out <a href="https://depot17.com" target="_self" class="link">Depot 17</a>, a non-profit organization. Our current focus is getting sufficient funding to run our first event! 
+      </li>
+      
+      <li>Coding the Depot's frontend has given me a great excuse for stepping into the field of interactive websites. I now get to work with GSAP, Lenis, R3F/Three.js and Astro, and I've been loving the web experiences these tools allow me to make. </li>
+      </li>
+
+      <li>University applications combined with the Depot have really sucked up all my free time. Most of my time is spent staring at my computer, coding, or drafting essay responses. It's exciting and scary, the idea that I'm not sure where I'll be this time next year.
+      </li>
+      <li>There is way too much I want to learn/do, but that I've needed to put a pause on: Uni apps.<br>
+        <b>To name a few:</b>
+        <ul id="plans">
+          <li>Go bouldering with my friends again (and boulder outdoors in the Spring!) </li>
+          <li>Design more PCBs and read <a href='https://artofelectronics.net/' target='_blank' class="link">'The Art of Electronics'</a></li>
+          <li>Make a breadboard CPU purely for fun! <i>I am geninuely SO excited to make this</i></li>
+          <li>Learn the basics of backend web development</li>
+
+ 
+        </ul>
+      
+      </li>
+    </ul>
+     
+      <br>
+      <p><b>Book(s):</b> 'Skeleton Crew' - Stephen King</p>
+      <p>It's a collection of short stories, and yet some stick just as much (if not more) than his novels. 
+        'Mrs.Todd's Shortcut' was <i>incredible</i> and <a href='#' target="#" class="link">'The Jaunt'<span style='translate:-100px 3rem; color:black;' class="tooltip">'It's longer than you think...'</span></a>, holy crap, is a must read.</p>
+      </p>
+
+
+    </section>
+
+    <footer>
+        <div>
+            <p style="font-weight:bold;">© 2025 Sophia Duan.</p>
+            <p style="line-height:1.8;">Inspired by: 
+                <a class="inspo" href="https://samliu.dev/" target="_blank">Sam&nbsp;L.</a>, 
+                <a class="inspo" href="https://plastuchino.xyz" target="_blank">Sebastian&nbsp;H.</a>, 
+                <a class="inspo" href="https://aconlin.com/" target="_blank">Acon&nbsp;L.</a>, and
+                <a class="inspo" href="https://benaubin.com/" target="_blank">Ben&nbsp;A.</a>. You should check them out!
+            </p>
+            <p>This website is <a href="https://github.com/sophiayduan/The-Site" target="_blank" class="link">open source!</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+<script src="/src/darkmode.js"></script>
+<script src="/src/script.js"></script>

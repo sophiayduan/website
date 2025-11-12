@@ -38,14 +38,14 @@ body {
 
 h3 {
     margin:0;
-    padding:10px 4px;
+    /* padding:10px 4px; */
 }
 
 
 p {
     /* font-size: clamp(1rem, 3.5vw, 1rem); */
-    font-size:1rem;
-    margin:0.4em;
+    font-size:1.15rem;
+    margin:0.4em 0em;
 }
 
 a {
@@ -326,10 +326,20 @@ h1:hover span:nth-child(3){
 
 }
 
-li {
-    line-height:1.5em;
+#doing {
+    li {
+        margin-top:0.5rem;
+        font-size:1.15rem;
+        
+        line-height:1.4;
+    }
 }
 
+#plans {
+    li {
+        margin-top:0.25rem;
+    }
+}
 .kindabold {
     font-weight:bold;
     color:var(--clr-projBorders);
@@ -502,9 +512,10 @@ footer p {
 }
  @media(min-width:2000px){
     body {
-        padding-left: 20rem;
-        padding-right: 20rem;
-        height:calc(100vh - var(--mtop));
+        padding-left: 35rem;
+        padding-right: 35rem;
+        padding-top:4rem;
+        overflow:hidden;
     }
 
     .proj {

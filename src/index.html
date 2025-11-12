@@ -39,7 +39,7 @@
           <img src="../images/github.png" loading="eager">
         </a>
         <a href="mailto:sophiayduan@gmail.com">
-          <p class="tooltip">sophiayduan@gmail.com</p>
+          <p class="tooltip">sophiayduan(at)gmail.com</p>
           <img src="../images/mail.png" loading="eager">
         </a>
         <a id="dark-mode-toggle" class="dark-mode-toggle">
@@ -72,17 +72,18 @@
   </section>
 
   <section style="display:flex;flex-direction:column;gap:4px;">
-    <p>I'm a builder (of mostly hardware projects) based in Ontario, Canada 🇨🇦</p>
-    <p>I love creating PCBs, building epic motion systems, coding websites, organizing hackathons, and rock climbing.</p>
-  </section>
+    <p>I'm a builder (of mostly hardware projects) based in Ontario, Canada 🇨🇦 </p>
+    <p>I love creating PCBs, building mechanical projects, coding websites, organizing hackathons, and rock climbing.</p>
+    <p>Check out what I'm up to <a href="/src/now.html" target="_self" class="link">/now </a></p>
+    </section>
 
   <br>
   
   
   <section style="padding-top:0.5rem;">
-    <h3>Below are some of my recent projects</h3>
-    <p style="padding-bottom:1rem;" >Check out some more on my <a href="https://github.com/sophiayduan/" class="link">Github</a></p>
 
+    <h3 style="padding:1rem 0rem">Below are some of my recent endeavors</h3>
+    
     <div id="projects">
       <a target="_self" href='projects/endev.html' class="proj" 
         onclick="clicked(event, 'endev')">
@@ -94,13 +95,14 @@
         <h2>JPEG</h2>
         <p>Ottawa's largest highschool all-girls game jam!</p>
       </a>
-      <a  target="_self" href='projects/pnp.html' class="proj" 
-        onclick="clicked(event, 'pnp')">
-        <h2>Tripteron <br> Pick n' Place</h2>
-        <p>A parallel axis tripteron SMT pick and place</p>
+      <a  target="_self" href='projects/depot.html' class="proj" 
+        onclick="clicked(event, 'depot')">
+        <h2>DEPOT17</h2>
+        <p>Something cool!<br> (currently building this)</p>
       </a>
     </div>
-    
+    <p>View all my projects on<a href="https://github.com/sophiayduan" target="_self" class="link"> GitHub</a></p>
+
   </section>
   <footer>
     <div>
@@ -191,7 +193,7 @@
           <a href="https://jpeg.hackclub.com/" target="_blank">view github repo</a>
         </div>
         <div>
-          <a href="https://jpeg.hackclub.com/" target="_blank">view site</a>
+          <a href="https://jpeg.hackclub.com/" target="_blank">visit site</a>
         </div>
         
       </div>
@@ -204,9 +206,9 @@
       </span>
     </div>
 <!-- DEPOT -->
-    <div class="tab" id="pnp" style="display:none;top:200px;right:350px;">
-      <span class="top">
-        <p>Tripteron Pick n' Place <b>ONGOING</b></p>
+    <div class="tab" id="depot" style="display:none;top:200px;right:350px;">
+    <span class="top">
+        <p>DEPOT17 July 2025 - Present</p>
         <div class="socials">
           <!-- <button>
             <img src="images/remove.svg" width="20px">
@@ -214,25 +216,33 @@
           <button>
             <img src="images/box.svg" width="15px">
           </button> -->
-          <button onclick="document.getElementById('pnp').style.display='none'"">
+          <button onclick="document.getElementById('depot').style.display='none'">
             <img src="../images/close.svg" width="20px">
           </button>
         </div>
       </span>
-      
+      <div style="border:1px rgb(211, 211, 211) solid;border-radius:4px;width:100%;min-height:320px;display:flex;align-items:center;justify-content:center;background-color:#f9f9f9;">
+        <div style="display:flex;align-items:center;justify-content:center;position:relative;transform:scale(0.37);background:red;width:100%;height:fit-content;">
+            <iframe src="https://depot17.com/"style="position: absolute;width: 1280px; height: 800px;border:3px solid gray ">
+            </iframe> 
+          </div>
+      </div>
     <div style="padding:4px;display:flex;justify-content:space-between;background-color:#f9f9f9;">
-      <p>This is my current focus, once I'm further along i'll update this site.
+      <p>We hope to provide students a way to change the world with their technical skills. <br> <i>The iframe demo you see above has some border rendering issues due to the weird frame size.</i>
         </p>
         <div class="links">
           <div>
-            <a href="projects/pnp.html" target="_self">read more</a>
+            <a href="https://github.com/Depot17" target="_self">view github repo</a>
+          </div>
+          <div>
+            <a href="https://www.depot17.com" target="_self">visit site</a>
           </div>
         </div>
     </div>
     <span class="top" style="background-color:#f0f0f0;padding-top:4px;">
-      <p>sophiaduan.dev/projects/pnp</p>
+      <p>sophiaduan.dev/projects/depot17</p>
       <div class ="links">
-          <button style="width:50px;" onclick="document.getElementById('pnp').style.display='none'"">OK</button>
+          <button style="width:50px;" onclick="document.getElementById('depot').style.display='none'"">OK</button>
         </div>
       </span>
     </div>
