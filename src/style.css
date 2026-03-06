@@ -328,9 +328,9 @@ h1:hover span:nth-child(3){
 
 #doing {
     li {
-        margin-top:0.5rem;
+        margin-top:0.25rem;
         font-size:1.15rem;
-        
+        margin-left:-1rem;
         line-height:1.4;
     }
 }
