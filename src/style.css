@@ -106,13 +106,13 @@ h1 {
 }
 h1 span:nth-child(1){
   position:absolute;
-  top:0; left:0; 
+  top:0; left:0;
   transition:0.35s;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
   overflow:hidden;
 }
 h1:hover span:nth-child(1){
-  transform:translateY(-18px); 
+  transform:translateY(-18px);
 }
 h1 span:nth-child(2){
   position:absolute;
@@ -122,14 +122,14 @@ h1 span:nth-child(2){
   overflow:hidden;
 }
 h1:hover span:nth-child(2){
-  transform:translateY(18px); 
+  transform:translateY(18px);
 }
 
 h1 span:nth-child(3){
     position:absolute;
     transform:translateY(-50%) scaleY(0);
     top:calc(clamp(2rem, 12vw, 4rem) * 0.5);
-    
+
     color: var(--clr-links);
     letter-spacing:0.1em;
     font-size:0.85rem;
@@ -138,7 +138,7 @@ h1 span:nth-child(3){
     line-height:1rem;
     padding:2px 4px;
     transition:0.35s;
-  
+
 }
 
 h1:hover span:nth-child(3){
@@ -156,7 +156,7 @@ h1:hover span:nth-child(3){
     text-align:center;
     height:auto;
 
- 
+
 }
 
 #projects h2 {
@@ -164,6 +164,9 @@ h1:hover span:nth-child(3){
     padding:0;
 }
 
+h2 {
+    font-size:2rem;
+}
 .proj {
     cursor:pointer;
     background-color:var(--clr-projects);
@@ -202,7 +205,7 @@ h1:hover span:nth-child(3){
     display:flex;
     justify-content:space-between;
     align-items:center;
-    
+
 }
 
 
@@ -245,7 +248,7 @@ h1:hover span:nth-child(3){
     border-radius:6px;
     background-color:#f0f0f0;
     padding:4px 6px;
-    color:black; 
+    color:black;
     width:500px;
     height:fit-content;
     display:flex;
@@ -269,7 +272,7 @@ h1:hover span:nth-child(3){
         background-color:#e0eef9;
     }
 
-    
+
 }
 
 
@@ -282,7 +285,7 @@ h1:hover span:nth-child(3){
         width:120px;
         background-color:white;
     }
-    
+
     div {
         width:130px;
         border-radius:3px;
@@ -307,7 +310,7 @@ h1:hover span:nth-child(3){
 
 
 .tools {
-    display:flex; 
+    display:flex;
     flex-wrap:wrap;
     gap:10px;
     align-items:center;
@@ -329,7 +332,6 @@ h1:hover span:nth-child(3){
 #doing {
     li {
         margin-top:0.25rem;
-        font-size:1.15rem;
         margin-left:-1rem;
         line-height:1.4;
     }
@@ -372,7 +374,7 @@ footer p {
 }
 
 .slideshow_item {
-    display:none; 
+    display:none;
 }
 
 .prev, .next {
@@ -408,8 +410,8 @@ footer p {
 }
 
 #special {
-    height:2rem; 
-    padding-bottom:2.5rem; 
+    height:2rem;
+    padding-bottom:2.5rem;
     padding-top:1rem;
 }
 
@@ -450,11 +452,11 @@ footer p {
         justify-content:center;
     }
 
-    .proj 
+    .proj
     {
         width:88%;
         flex:none;
-        
+
     }
 
     .socials img {
@@ -465,11 +467,11 @@ footer p {
     a{
         font-weight:600;
     }
-    
+
     .tooltip{
         display:none;
     }
-    
+
     #imgpair {
         grid-template-columns:1fr;
     }

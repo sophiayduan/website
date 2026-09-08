@@ -19,8 +19,6 @@ if (darkMode === 'enabled') {
     
   enableDarkMode();
   mode.src = '/images/light.png';
-
-
   
 }
 

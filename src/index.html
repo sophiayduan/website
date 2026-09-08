@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
   <script>
   if (localStorage.getItem('darkMode') === 'enabled') {
@@ -21,7 +21,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon_io (1)/site.webmanifest">
-  
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Libre+Barcode+128&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
@@ -29,7 +29,7 @@
 
 </head>
 <body>
-  
+
   <section>
     <div class="top">
       <p>Hey&nbspthere!&nbspI'm </p>
@@ -61,7 +61,7 @@
 
         </h1>
       </div>
-      
+
 
       <!-- <div id="about" class="hidden">
       <p>Currently reading: 'The Stand' by Stephen King</p>
@@ -72,46 +72,49 @@
   </section>
 
   <section style="display:flex;flex-direction:column;gap:4px;">
-    <p>I'm a builder (of mostly hardware projects) based in Ontario, Canada 🇨🇦.  <br> I love creating PCBs, building mechanical projects, coding websites, organizing hackathons, and rock climbing.</p>
-    <p>Check out what I'm up to <a href="/now.html" target="_self" class="link">/now </a></p>
+    <span>I'm a builder (of mostly hardware projects & websites) from Ontario, Canada  🇨🇦.  <br> I love making PCBs, building mechanical projects, coding websites, organizing hackathons, and rock climbing.</span>
+    <br/>
+    <br/>
+
+    <span style="font-weight:400; padding-top:1rem;font-style:italic;">Check out what I'm up to <a href="/now.html" target="_self" class="link">/now </a></>
     </section>
-  
+
   <section>
 
     <h3 style="padding:1rem 0rem">Below are some of my recent endeavors</h3>
-    
+
     <div id="projects">
-      <a target="_self" href='projects/endev.html' class="proj" 
+      <a target="_self" href='projects/endev.html' class="proj"
         onclick="clicked(event, 'endev')">
         <h2>Endev</h2>
         <p>A system to illuminate/monitor my Ender 3. </p>
       </a>
-      <a target="_self" href='projects/jpeg.html' class="proj" 
+      <a target="_self" href='projects/jpeg.html' class="proj"
         onclick="clicked(event, 'jpeg')">
         <h2>JPEG</h2>
         <p>Ottawa's largest highschool all-girls game jam!</p>
       </a>
-      <a  target="_self" href='#' class="proj" 
-        onclick="clicked(event, 'depot')">
-        <h2>DEPOT17</h2>
-        <p>Something cool!<br> (currently building this)</p>
+      <a  target="_self" href='#' class="proj"
+        onclick="clicked(event, 'fallout')">
+        <h2>Fallout</h2>
+        <p>A hardware hackathon in Shenzhen, China</p>
       </a>
     </div>
-    <p>View all my projects on<a href="https://github.com/sophiayduan" target="_self" class="link"> GitHub</a></p>
+    <br />
+    <span >View all my projects on<a href="https://github.com/sophiayduan" target="_self" class="link"> GitHub</a></span>
 
   </section>
   <footer>
     <div>
     <p style="font-weight:bold;">© 2026 Sophia Duan.</p>
-    <p style="line-height:1.8;">Inspired by: 
-      <a class="inspo" href="https://samliu.dev/" target="_blank">Sam&nbsp;L.</a>, 
-      <a class="inspo" href="https://plastuchino.xyz" target="_blank">Sebastian&nbsp;H.</a>, 
+    <p style="line-height:1.8;">Inspired by:
+      <a class="inspo" href="https://samliu.dev/" target="_blank">Sam&nbsp;L.</a>,
       <a class="inspo" href="https://aconlin.com/" target="_blank">Acon&nbsp;L.</a>, and
       <a class="inspo" href="https://benaubin.com/" target="_blank">Ben&nbsp;A.</a>. You should check them out!
     </p>
     <p>This website is <a href="https://github.com/sophiayduan/The-Site" target="_blank" class="link">open source!</a></p>
     </div>
-    
+
   </footer>
 
   <section id="popup_tabs">
@@ -175,7 +178,7 @@
       <div style="border:1px rgb(211, 211, 211) solid;border-radius:4px;width:100%;min-height:320px;display:flex;align-items:center;justify-content:center;background-color:#f9f9f9;">
         <div style="display:flex;align-items:center;justify-content:center;position:relative;transform:scale(0.37);background:red;width:100%;height:fit-content;">
             <iframe src="https://jpeg.hackclub.com/"style="position: absolute;width: 1280px; height: 800px;border:3px solid gray ">
-            </iframe> 
+            </iframe>
           </div>
       </div>
     <div style="padding:4px;display:flex;justify-content:space-between;background-color:#f9f9f9;">
@@ -191,7 +194,7 @@
         <div>
           <a href="https://jpeg.hackclub.com/" target="_blank">visit site</a>
         </div>
-        
+
       </div>
     </div>
     <span class="top" style="background-color:#f0f0f0;padding-top:4px;">
@@ -201,10 +204,10 @@
         </div>
       </span>
     </div>
-<!-- DEPOT -->
-    <div class="tab" id="depot" style="display:none;top:200px;right:350px;">
+<!-- FALLOUT -->
+    <div class="tab" id="fallout" style="display:none;top:200px;right:350px;">
     <span class="top">
-        <p>DEPOT17 July 2025 - Present</p>
+        <p>Fallout March 1st - July 7th</p>
         <div class="socials">
           <!-- <button>
             <img src="images/remove.svg" width="20px">
@@ -212,37 +215,42 @@
           <button>
             <img src="images/box.svg" width="15px">
           </button> -->
-          <button onclick="document.getElementById('depot').style.display='none'">
+          <button onclick="document.getElementById('fallout').style.display='none'">
             <img src="../images/close.svg" width="20px">
           </button>
         </div>
       </span>
+      <!--<div style="border:1px rgb(211, 211, 211) solid;border-radius:4px;width:100%;min-height:320px;display:flex;align-items:center;justify-content:center;background-color:#f9f9f9;">
+        <div style="display:flex;align-items:center;justify-content:center;position:relative;transform:scale(0.37);background:red;width:100%;height:fit-content;">
+            <iframe src="https://fallout.hackclub.com"style="position: absolute;width: 1280px; height: 800px;border:3px solid gray ">
+            </iframe>
+          </div>
+      </div>-->
       <div style="border:1px rgb(211, 211, 211) solid;border-radius:4px;width:100%;min-height:320px;display:flex;align-items:center;justify-content:center;background-color:#f9f9f9;">
         <div style="display:flex;align-items:center;justify-content:center;position:relative;transform:scale(0.37);background:red;width:100%;height:fit-content;">
-            <iframe src="https://depot17.com/"style="position: absolute;width: 1280px; height: 800px;border:3px solid gray ">
-            </iframe> 
+            <img src="../images/fallout.png" style="position: absolute;width: auto; height: 800px;border:3px solid gray ">
           </div>
       </div>
     <div style="padding:4px;display:flex;justify-content:space-between;background-color:#f9f9f9;">
-      <p>Launching Jan 2026<br> <i>The iframe demo you see above has some border rendering issues due to the weird frame size.</i>
+      <p>A hardware hackathon in Shenzhen for 180+ teens. Designed, developed, and organized with my friends. Ran July 1-7th, 2026.</i>
         </p>
         <div class="links">
           <div>
-            <a href="https://github.com/Depot17" target="_self">view github repo</a>
+            <a href="https://github.com/hackclub/fallout" target="_self">view github repo</a>
           </div>
           <div>
-            <a href="https://www.depot17.com" target="_self">visit site</a>
+            <a href="https://fallout.hackclub.com" target="_self">visit site</a>
           </div>
         </div>
     </div>
     <span class="top" style="background-color:#f0f0f0;padding-top:4px;">
-      <p>sophiaduan.dev/projects/depot17</p>
+      <p>sophiaduan.dev/projects/fallout</p>
       <div class ="links">
-          <button style="width:50px;" onclick="document.getElementById('depot').style.display='none'"">OK</button>
+          <button style="width:50px;" onclick="document.getElementById('fallout').style.display='none'"">OK</button>
         </div>
       </span>
     </div>
-    
+
   </section>
 </body>
 <script>
@@ -253,4 +261,3 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
 
 <script src="script.js"></script>
 <script src="darkmode.js"></script>
-
