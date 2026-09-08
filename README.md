@@ -1,4 +1,4 @@
-# [Website](https://sophiaduan.dev/)
+# [website](https://sophiaduan.dev/)
 
 This is my personal site, very much KiCad themed. 
 
