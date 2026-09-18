@@ -3,10 +3,10 @@
 
 <head>
   <script>
-  if (localStorage.getItem('darkMode') === 'enabled') {
-    document.documentElement?.classList.add('darkmode');
-  }
-</script>
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement?.classList.add('darkmode');
+    }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sophia Duan</title>
@@ -61,33 +61,28 @@
 
         </h1>
       </div>
-
-
-      <!-- <div id="about" class="hidden">
-      <p>Currently reading: 'The Stand' by Stephen King</p>
-      <p>Last listened to: </p>
-      </div> -->
-
     </div>
   </section>
 
-  <section style="display:flex;flex-direction:column;gap:4px;">
-    <span>I'm a builder (of mostly hardware projects & websites) from Ontario, Canada  🇨🇦.  <br> I love making PCBs, building mechanical projects, coding websites, organizing hackathons, and rock climbing.</span>
+  <section style="display:flex;flex-direction:column;">
+    <p>I'm a 18-year-old making hardware and websites.
+        Also, I'm running events to help teens go on technical adventures <span style="white-space: nowrap;"><a href="https://hackclub.com/" class="link">@ Hack Club</a>.</span>
+    </p>
+
     <br/>
     <br/>
 
-    <span style="font-weight:400; padding-top:1rem;font-style:italic;">Check out what I'm up to <a href="/now.html" target="_self" class="link">/now </a></>
     </section>
 
   <section>
 
-    <h3 style="padding:1rem 0rem">Below are some of my recent endeavors</h3>
+    <h3 style="padding:1.5rem 0rem">My recent projects:</h3>
 
     <div id="projects">
-      <a target="_self" href='projects/endev.html' class="proj"
-        onclick="clicked(event, 'endev')">
-        <h2>Endev</h2>
-        <p>A system to illuminate/monitor my Ender 3. </p>
+      <a target="_self" href='projects/badge.html' class="proj"
+        onclick="clicked(event, 'badge')">
+        <h2>PCB Badges</h2>
+        <p>A RP2040 based BLE badge.</p>
       </a>
       <a target="_self" href='projects/jpeg.html' class="proj"
         onclick="clicked(event, 'jpeg')">
@@ -97,14 +92,19 @@
       <a  target="_self" href='#' class="proj"
         onclick="clicked(event, 'fallout')">
         <h2>Fallout</h2>
-        <p>A hardware hackathon in Shenzhen, China</p>
+        <p>A hardware hackathon in Shenzhen, China for 180 teens</p>
       </a>
     </div>
     <br />
-    <span >View all my projects on<a href="https://github.com/sophiayduan" target="_self" class="link"> GitHub</a></span>
 
+    <h3 style="margin-top:0.5rem">I'm currently building:</h3>
+    <ul>
+        <li><p>A global printed circuit board design competition for teens</p></li>
+        <li><p>A solar-powered e-paper digital watch</p></li>
+    </ul>
+    <p style="font-style:italic">Read more about what I'm up to <a href="/now" class="link">/now</a></p>
   </section>
-  <footer>
+  <footer style="margin-top:auto;">
     <div>
     <p style="font-weight:bold;">© 2026 Sophia Duan.</p>
     <p style="line-height:1.8;">Inspired by:
@@ -118,10 +118,10 @@
   </footer>
 
   <section id="popup_tabs">
-    <!-- ENDEV -->
-    <div class="tab" id="endev" style="display:none;top:50px;left:50px;">
+    <!-- BADGES -->
+    <div class="tab" id="badge" style="display:none;top:50px;left:50px;">
       <span class="top">
-        <p>Endev</p>
+        <p>Hackathon PCB Badges</p>
         <div class="socials">
           <!-- <button>
             <img src="images/remove.svg" width="20px">
@@ -129,32 +129,33 @@
           <button>
             <img src="images/box.svg" width="15px">
           </button> -->
-          <button onclick="document.getElementById('endev').style.display='none'">
+          <button onclick="document.getElementById('badge').style.display='none'">
             <img src="../images/close.svg" width="20px">
           </button>
         </div>
       </span>
       <div style="border:1px rgb(211, 211, 211) solid;border-radius:4px;width:100%;min-height:320px;display:flex;align-items:center;justify-content:center;background-color:#f9f9f9;">
         <div style="display:flex;align-items:center;justify-content:center;position:relative;transform:scale(0.37);background:red;width:100%;height:fit-content;">
-            <img src="../images/endev_back.png"style="position: absolute;width: auto; height: 800px;border:3px solid gray ">
+            <img src="../images/badge.png"style="position: absolute;width: auto; height: 800px;border:3px solid gray ">
           </div>
       </div>
     <div style="padding:4px;display:flex;justify-content:space-between;background-color:#f9f9f9;">
-      <p> It features an led strip, filament feeding detection, temp/humidity sensor, accelerometer (for vibrations) and wifi connectivity. (I'm working on v1.5 of the devboard to no longer make it a devboard.)
+      <p>
+          PCB badges originally made for <a href="https://fallout.hackclub.com" class="link">Fallout</a>. Currently under development!
       </p>
       <div class="links">
         <div>
-          <a href="projects/endev.html" target="_self">read more</a>
+          <a href="projects/badge.html" target="_self">read more</a>
         </div>
         <div>
-          <a href="https://github.com/sophiayduan/Endev-board" target="_blank">view github repo</a>
+          <a href="https://github.com/sophiayduan/badges" target="_blank">view github repo</a>
         </div>
       </div>
     </div>
     <span class="top" style="background-color:#f0f0f0;padding-top:4px;">
-      <p>sophiaduan.dev/projects/endev</p>
+      <p>sophiaduan.dev/projects/badges</p>
       <div class ="links">
-        <button style="width:50px;" onclick="document.getElementById('endev').style.display='none'">OK</button>
+        <button style="width:50px;" onclick="document.getElementById('badge').style.display='none'">OK</button>
         </div>
       </span>
     </div>
@@ -162,7 +163,7 @@
     <!-- JPEG -->
     <div class="tab" id="jpeg" style="display:none;top:80px;right:400px;">
       <span class="top">
-        <p>JPEG - July 5-6th 2025</p>
+        <p>JPEG: July 5-6th 2025</p>
         <div class="socials">
           <!-- <button>
             <img src="images/remove.svg" width="20px">
@@ -207,7 +208,7 @@
 <!-- FALLOUT -->
     <div class="tab" id="fallout" style="display:none;top:200px;right:350px;">
     <span class="top">
-        <p>Fallout March 1st - July 7th</p>
+        <p>Fallout: March 1st - July 7th</p>
         <div class="socials">
           <!-- <button>
             <img src="images/remove.svg" width="20px">
